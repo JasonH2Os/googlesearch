@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Image Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+        
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        }
+        
+        .nav {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .nav a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 20px;  
+            border: 1px solid #ccc; 
+            text-align: center;  
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;  
+        }
+        #luckyButton {
+            padding: 10px 20px;
+            border-radius: 4px; 
+            margin-top: 65px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Google Search</a>
+        <a href="imagesearch.html">Image Search</a>
+        <a href="advancedsearch.html">Advanced Search</a>
+    </div>
+    <form action="https://www.google.com/search?tbm=isch">
+        <input type="text" name="q">
+        <input type="submit" value="Image Search">
+    </form>
+</body>
+</html>
